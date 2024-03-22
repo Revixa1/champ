@@ -39,7 +39,7 @@ QuadrupedController::QuadrupedController(ros::NodeHandle *nh, ros::NodeHandle *p
 {
     std::string joint_control_topic = "joint_group_position_controller/command";
     std::string knee_orientation;
-    double loop_rate = 200.0;
+    double loop_rate = 50.0;
 
     nh->getParam("gait/pantograph_leg",         gait_config_.pantograph_leg);
     nh->getParam("gait/max_linear_velocity_x",  gait_config_.max_linear_velocity_x);
